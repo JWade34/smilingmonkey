@@ -1,0 +1,39 @@
+@import "bootstrap";
+
+@import 'bootstrap-sprockets';
+
+ul {
+  list-style: none;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 65px;
+  color: white;
+  background-color: black;
+}
+
+.song {
+  color: white;
+  text-shadow: 3px 2px 4px #337ab7;
+}
+
+span.punctuation {
+  // color: yellow;
+}
+
+.form-inline {
+  color: white;
+  padding: 2em;
+}
+
+body {
+  // padding-top: 70px;
+  margin: auto 10px;
+  width: auto;
+  height: 2000px;
+  background-color: black;
+}
+
+.artist {
+  color: #cecece;
+  text-shadow: 3px 2px 4px white;
+}

@@ -41,5 +41,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  gem 'httparty'
 end
+
+gem 'httparty'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'

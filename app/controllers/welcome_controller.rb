@@ -6,7 +6,8 @@ class WelcomeController < ApplicationController
   end
 
   def index
-    url = "http://api.lyricsnmusic.com/songs?api_key=#{ENV["LYRICS_N_MUSIC_API_KEY"]}&artist=coldplay"
+    artist = "jayz"
+    url = "http://api.lyricsnmusic.com/songs?api_key=#{ENV["LYRICS_N_MUSIC_API_KEY"]}&artist=#{artist}"
     @response = HTTParty.get(url)
     @response.parsed_response
   end
