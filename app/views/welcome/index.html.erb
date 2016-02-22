@@ -18,21 +18,21 @@
   </head>
   <body>
     <div class="container">
-      <div class="navbar-form navbar-left">
-        <%= link_to "Get Random Lyrics", root_path, class: "btn btn-primary" %>
-      </div>
-    <form class="navbar-form navbar-right" role="search">
+      <form class="navbar-form navbar-right" role="search">
       <div class="form-group">
         <input type="text" class="form-control" name="artist" placeholder="Beyonce">
-        <button type="submit" value="name" class="btn btn-primary">Search by Artist</button>
-
+          <button type="submit" value="name" class="btn btn-primary">Search by Artist</button>
         <input type="text" class="form-control" name="title" placeholder="All the Single Ladies">
-        <button type="submit" value="name" class="btn btn-primary">Search by Title</button>
+          <button type="submit" value="name" class="btn btn-primary">Search by Title</button>
+        <%= link_to "Get Random Lyrics", root_path, class: "btn btn-primary get-random" %>
       </div>
+
     </form>
   </div>
-  <div>
+
+  <div class="lyrics-box">
     <%= render partial: "artist" %>
-</div>
+  </div>
+
 </body>
 </html>

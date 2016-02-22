@@ -1,17 +1,7 @@
-@import "bootstrap";
 
-@import 'bootstrap-sprockets';
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
 
-@import 'tablet';
-@import 'mobile';
-
-
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-
-.lyrics-box {
-  padding-top: 50px;
-}
 
 ul {
   list-style: none;
@@ -44,8 +34,6 @@ body {
   text-shadow: 1px 1px 1px white;
   font-size: 40px;
   position:absolute;
-  // left:500px;
-  // right:0;
   align: right;
 }
 
