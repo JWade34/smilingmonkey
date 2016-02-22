@@ -1,0 +1,25 @@
+<div>
+  <div>
+    <ul>
+      <li class="song"><%= @lyrics["snippet"][0..9]  %></li>
+      <li class="song"><%= @lyrics["snippet"][10..30]  %></li>
+      <li class="song"><%= @lyrics["snippet"][31..61]  %></li>
+      <li class="song"><%= @lyrics["snippet"][62..102]  %></li>
+      <li class="song"><%= @lyrics["snippet"][103..133]  %></li>
+      <li class="song"><%= @lyrics["snippet"][134..154]  %></li>
+      <li class="song"><%= @lyrics["snippet"][155..165]  %></li>
+    </ul>
+  <div>
+
+    </div>
+    </div>
+
+  <footer>
+    <div class="">
+      <a href="<%= @lyrics["artist"]["url"] %>">
+      <div class"artist-link">
+        <p class="artist"><%= @lyrics["artist"]["name"] %> - <%= @lyrics["title"] %></p>
+      </div>
+    </div>
+  </footer>
+</div>

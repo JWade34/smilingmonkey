@@ -18,43 +18,21 @@
   </head>
   <body>
     <div class="container">
+      <div class="navbar-form navbar-left">
+        <%= link_to "Get Random Lyrics", root_path, class: "btn btn-primary" %>
+      </div>
     <form class="navbar-form navbar-right" role="search">
       <div class="form-group">
-        <input type="text" class="form-control" name="artist" placeholder="Search by Artist Here">
-        <!-- <%= text_field_tag(:artist) %> -->
+        <input type="text" class="form-control" name="artist" placeholder="Beyonce">
+        <button type="submit" value="name" class="btn btn-primary">Search by Artist</button>
+
+        <input type="text" class="form-control" name="title" placeholder="All the Single Ladies">
+        <button type="submit" value="name" class="btn btn-primary">Search by Title</button>
       </div>
-      <!-- <div class="form-group">
-        <input type="text" class="form-control" name="title" placeholder="Or Song Title Here">
-      </div> -->
-      <button type="submit" value="name" class="btn btn-primary">Get Lyrics</button>
-      <button type="submit" value="" class="btn btn-primary">Random</button>
     </form>
   </div>
-
-
   <div>
-    <ul>
-      <li class="song"><%= @lyrics["snippet"][0..9]  %></li>
-      <li class="song"><%= @lyrics["snippet"][10..30]  %></li>
-      <li class="song"><%= @lyrics["snippet"][31..61]  %></li>
-      <li class="song"><%= @lyrics["snippet"][62..102]  %></li>
-      <li class="song"><%= @lyrics["snippet"][103..133]  %></li>
-      <li class="song"><%= @lyrics["snippet"][134..154]  %></li>
-      <li class="song"><%= @lyrics["snippet"][155..165]  %></li>
-    </ul>
-    <div>
-
-    </div>
-    </div>
-<footer>
-  <div class="">
-    <a href="<%= @lyrics["artist"]["url"] %>">
-    <div class"artist-link">
-      <p class="artist"><%= @lyrics["artist"]["name"] %> - <%= @lyrics["title"] %></p>
-    </div>
-  </div>
-</footer>
-
-
+    <%= render partial: "artist" %>
+</div>
 </body>
 </html>
