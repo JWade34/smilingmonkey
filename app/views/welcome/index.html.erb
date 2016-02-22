@@ -47,11 +47,11 @@
     </div>
 <footer>
   <div class="">
-    <!-- <%= params.inspect %> -->
+    <%= params.inspect %>
     <a href="<%= @lyrics["artist"]["url"] %>">
-    <ul class"">
-      <li class="artist"><%= @lyrics["artist"]["name"] %> - <%= @lyrics["title"] %></li>
-    </ul>
+    <div class"artist-link">
+      <p class="artist"><%= @lyrics["artist"]["name"] %> - <%= @lyrics["title"] %></p>
+    </div>
   </div>
 </footer>
 
