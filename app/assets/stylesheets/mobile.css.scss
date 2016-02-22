@@ -2,6 +2,9 @@
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
+.thing {
+   display: none !important;
+ }
 
 ul {
   list-style: none;
@@ -42,7 +45,6 @@ body {
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
