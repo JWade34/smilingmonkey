@@ -23,10 +23,11 @@
         <input type="text" class="form-control" name="artist" placeholder="Search by Artist Here">
         <!-- <%= text_field_tag(:artist) %> -->
       </div>
-      <div class="form-group">
+      <!-- <div class="form-group">
         <input type="text" class="form-control" name="title" placeholder="Or Song Title Here">
-      </div>
+      </div> -->
       <button type="submit" value="name" class="btn btn-primary">Get Lyrics</button>
+      <button type="submit" value="" class="btn btn-primary">Random</button>
     </form>
   </div>
 
@@ -47,7 +48,6 @@
     </div>
 <footer>
   <div class="">
-    <%= params.inspect %>
     <a href="<%= @lyrics["artist"]["url"] %>">
     <div class"artist-link">
       <p class="artist"><%= @lyrics["artist"]["name"] %> - <%= @lyrics["title"] %></p>
