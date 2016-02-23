@@ -7,6 +7,13 @@ class WelcomeController < ApplicationController
 
   def index
     if
+      params[:artist].present? && params[:title].present?
+      artist = params[:artist]
+      title = params[:title]
+      url = "http://api.lyricsnmusic.com/songs?api_key=#{ENV["LYRICS_N_MUSIC_API_KEY"]}&artist=#{artist}&track=#{title}"
+      @response = HTTParty.get(url)
+      @lyrics = @response.parsed_response[0]
+    elsif
       params[:artist].present?
       artist = params[:artist]
       url = "http://api.lyricsnmusic.com/songs?api_key=#{ENV["LYRICS_N_MUSIC_API_KEY"]}&artist=#{artist}"
